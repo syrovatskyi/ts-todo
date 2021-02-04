@@ -1,0 +1,68 @@
+{
+  "component": {
+    "entities": [
+      {
+        "name": "user",
+        "columns": [
+          "firstName",
+          "lastName",
+          "phone"
+        ]
+      },
+      {
+        "name": "account",
+        "columns": [
+          "login",
+          "password",
+          "email"
+        ]
+      },
+      {
+        "name": "address",
+        "columns": [
+          "country",
+          "city",
+          "street"
+        ]
+      }
+    ],
+    "relations": 
+      {
+        "type": "o2m",
+        "from": "user",
+        "to": "account"
+      },
+  
+    "entityDiagram": {
+      "tables": [
+        {
+          "name": "user",
+          "position": {
+            "top": 20,
+            "left": 20,
+            "width": 50,
+            "height": 50
+          }
+        },
+        {
+          "name": "account",
+          "position": {
+            "top": 80,
+            "left": 80,
+            "width": 50,
+            "height": 50
+          }
+        },
+        {
+          "name": "address",
+          "position": {
+            "top": 140,
+            "left": 140,
+            "width": 50,
+            "height": 50
+          }
+        }
+      ]
+    }
+  }
+}
